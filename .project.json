@@ -6,8 +6,8 @@
   "build": {
     "targetFolder": "dist",
     "sourceFolder": "webapp",
-    "buildRequired": true,
-    "lastBuildDateTime": "Fri, 08 Sep 2017 22:05:09 GMT"
+    "buildRequired": false,
+    "lastBuildDateTime": "Fri, 08 Sep 2017 22:50:20 GMT"
   },
   "generation": [
     {
@@ -53,6 +53,6 @@
   "hcpdeploy": {
     "account": "s0011104741trial",
     "name": "ui5svgicon",
-    "lastVersionWeTriedToDeploy": "1.0.1"
+    "lastVersionWeTriedToDeploy": "1.0.2"
   }
 }
