@@ -1,0 +1,46 @@
+<mvc:View 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+	xmlns:control="com.greg.svgIconTest.control"
+	controllerName="com.greg.svgIconTest.controller.App" 
+	displayBlock="true" 
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<l:HorizontalLayout allowWrapping="true" content="{/icons}">
+						<control:SvgIcon icon="{icon}" width="{/size}px" height="{/size}px" />
+					</l:HorizontalLayout>
+					
+					<f:SimpleForm id="SimpleFormChange354"
+						editable="true"
+						layout="ResponsiveGridLayout"
+						title="SVG Icon generator"
+						labelSpanXL="3"
+						labelSpanL="3"
+						labelSpanM="3"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="4"
+						emptySpanL="4"
+						emptySpanM="4"
+						emptySpanS="0"
+						columnsXL="1"
+						columnsL="1"
+						columnsM="1"
+						singleContainerFullSize="false" >
+						<f:content>
+							<Label labelFor="__input1" text="Icon width" />
+							<Input type="Number" width="100%" id="__input1" value="{/size}" submit="onRandomize"/>
+							<Label labelFor="__input2" text="Number of icons to show" />
+							<Input type="Number" width="100%" id="__input2" value="{/numOfIcons}" submit="onRandomize"/>
+							<Button text="randomize" press="onRandomize"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
